@@ -1,0 +1,35 @@
+.section {
+  padding: 20px 0;
+
+  @media screen and (min-width: $bp-desktop) {
+    padding: 48px 0;
+    // паддинг 48 мы получили разделив 96 /2. так как секции схлопываются
+  }
+
+  &__title {
+    font-size: 32px;
+    line-height: 1.5;
+    font-weight: 600;
+    width: 320px;
+    height: 100px;
+
+    @media screen and (min-width: $bp-tablet) {
+      font-size: 44px;
+      line-height: 1.5;
+      font-weight: 600;
+      width: 100%;
+      height: 100%;
+    }
+
+    @media screen and (min-width: $bp-desktop) {
+      font-size: 64px;
+      line-height: 1.3;
+      font-weight: 900;
+
+    }
+
+    &--centered {
+      text-align: center;
+    }
+  }
+}

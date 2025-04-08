@@ -1,0 +1,37 @@
+.hero-section {
+  padding: 272px 0;
+  background-image: linear-gradient(126.97deg,
+      rgba(18, 18, 17, 0.78) 2.45%,
+      rgba(18, 18, 17, 0.6) 59.159%,
+      rgba(18, 18, 17, 0) 91.215%), url(/images/hero-section-background.jpg);
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-size: cover;
+
+  &__title {
+    color: var(--color-primary-light);
+    text-align: center;
+    font-size: 66px;
+    font-weight: 900;
+    line-height: 1;
+    margin-bottom: 48px;
+
+    @media screen and (min-width: $bp-desktop) {
+      font-size: 128px;
+      line-height: 1.5;
+      margin-bottom: 0;
+    }
+  }
+
+  &__button {
+    display: block;
+    // чтобы постоянно ковсем кнопкам не добавлять дисплей блок, можно это значение сразу задать в основной папке боттон
+    margin: 0 auto;
+    margin-top: 48px;
+    border-radius: 8px;
+
+    @media screen and (min-width: $bp-desktop) {
+      display: none;
+    }
+  }
+}

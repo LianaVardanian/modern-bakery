@@ -1,0 +1,44 @@
+.contact-section {
+  padding-bottom: 96px;
+
+  &__container {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+
+    @media screen and (min-width: $bp-tablet) {
+      flex-direction: row;
+      gap: 32px;
+      align-items: center;
+    }
+  }
+
+  &__title {
+    margin-bottom: 16px;
+    width: 630px;
+  }
+
+  &__map {
+    flex-shrink: 0;
+    border-radius: 16px;
+    margin: 0 24px;
+    border: none;
+    height: 176PX;
+
+    @media screen and (min-width: $bp-tablet) {
+      margin: auto;
+      width: 320px;
+      height: 500px;
+    }
+
+    @media screen and (min-width: $bp-desktop) {
+      width: 600px;
+      height: 595px;
+    }
+  }
+
+  &__button {
+    display: block;
+    margin: 0 auto 16px;
+  }
+}

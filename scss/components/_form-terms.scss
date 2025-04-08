@@ -1,0 +1,28 @@
+.form-terms {
+  font-weight: 500;
+  font-size: 12px;
+  margin: 0 auto;
+  max-width: 211px;
+  text-align: center;
+  position: relative;
+
+  &__link {
+    color: var(--color-primary-dark);
+    text-underline-offset: 2px;
+  }
+}
+
+// .form-terms::before {
+//   content: "";
+//   position: absolute;
+//   width: 16px;
+//   height: 16px;
+//   top: 0;
+//   left: -16px;
+//   border: 1px solid var(--color-brand-light);
+//   border-radius: 5px;
+//   transition: color 0s;
+// }
+// @keyframes color{
+//   translate: black;
+// }

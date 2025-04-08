@@ -1,0 +1,54 @@
+.chef-card {
+  display: flex;
+  align-items: flex-start;
+  // чтобы фото не растягивались
+  gap: 16px;
+
+  @media screen and (min-width: $bp-desktop) {
+    gap: 30px;
+    // 30 gaps between the cards 
+  }
+
+
+  &__title {
+    font-style: 24px;
+    @media screen and (min-width: $bp-desktop) {
+      margin-bottom: 16px;
+      font-size: 40px;
+      font-weight: 600;
+    }
+  }
+
+  &__photo {
+    width: 140px;
+    border-radius: 4px 4px 4px 200px;
+    box-shadow:
+      -10px 10px 0px 0px var(--color-primary-light),
+      -10px 10px 0px 2px var(--color-chefs-photo);
+
+    @media screen and (min-width: $bp-tablet) {
+      width: 240px;
+      box-shadow:
+        -16px 16px 0px 0px var(--color-primary-light),
+        -16px 16px 0px 2px var(--color-chefs-photo);
+    }
+  }
+
+  &__text {
+    font-size: 14px;
+
+    &:last-child {
+      display: none;
+    }
+
+    @media screen and (min-width: $bp-desktop) {
+      font-size: 18px;
+      margin-bottom: 24px;
+    }
+
+    &:last-child {
+      margin-bottom: 0px;
+    }
+  }
+
+}

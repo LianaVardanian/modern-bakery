@@ -1,0 +1,68 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+@import'./utils/variables';
+
+h1,
+h2,
+h3,
+h4,
+h5,
+H6,
+p {
+  margin-top: 0px;
+}
+
+address {
+  font-style: normal;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+a {
+  display: inline-block;
+}
+
+.section {
+  padding: 48px 0;
+}
+
+.container {
+  width: 100%;
+  max-width: 1288px;
+  margin: 0 auto;
+  padding: 0 24px;
+
+}
+
+
+body {
+  background-color: var(--color-primary-light);
+  color: var(--color-primary-dark);
+  font-family: 'poppins', sans-serif;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 1.5;
+  /* 27 LH/ 18 size text =1.5*/
+  margin: 0;
+
+  @media screen and (min-width: $bp-desktop ) {
+    font-size: 18px;
+    font-weight: 400;
+  }
+
+}
